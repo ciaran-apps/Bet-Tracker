@@ -348,7 +348,6 @@
       </div>
       <div class="card chart"><h3>Running profit / loss</h3>${chart()}</div>
       <div class="card chart"><h3>Monthly won / lost</h3>${monthly()}</div>
-      <div class="card"><h3>Match Predictor vs own picks</h3>${mpCard()}</div>
       <div class="card chart"><h3>By category</h3>
         <div class="filters" style="margin:0 0 10px">${[['wagered','Wagered'],['won','Won'],['lost','Lost']].map(([k,l])=>`<button class="chip ${pieMode===k?'on':''}" data-pie="${k}">${l}</button>`).join('')}</div>
         ${pie()}</div>
